@@ -1,21 +1,27 @@
 "use client";
-import Image from "next/image";
-import { Calendar } from "@/components/ui/calendar";
+
 import React from "react";
-import {useState} from "react"
+import Hero from "@/components/home/hero";
+import Stats from "@/components/home/stats";
+import WhyWeExist from "@/components/home/whyWeExist";
+import PillarsOfApproach from "@/components/home/pillarsOfApproach";
+import WhoCanBeMentor from "@/components/home/whoCanBeMentor";
+import PastEvents from "@/components/home/pastEvents";
+import AwardsAndRecognitions from "@/components/home/awardsRecognition";
+import JoinMovement from "@/components/home/joinMovement";
 
 export default function Home() {
-  const [date, setDate] = useState<Date | undefined>(new Date());
 
   return (
-    <div className="flex justify-center align-center min-w-screen min-h-screen">
-      <h1 className="max-h-content">This is Next + Typescript template</h1>
-      <Calendar
-        mode="single"
-        selected={date}
-        onSelect={setDate}
-        className="rounded-md border"
-      />
+    <div className="flex flex-col max-w-screen bg-clay-light-hover gap-8    ">
+      <Hero />
+      <Stats />
+      <WhyWeExist />
+      <PillarsOfApproach />
+      <WhoCanBeMentor />
+      <PastEvents />
+      <AwardsAndRecognitions />
+      <JoinMovement />
     </div>
   );
 }
