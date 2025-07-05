@@ -39,7 +39,7 @@ const MentorshipJourney = () => {
         {mentorshipSteps.map((step, index) => (
           <div
             key={index}
-            className={` ${index%2==0 ? "bg-gradient-to-b from-green-200 to-green-800" : "bg-[#C3D7C4]"} rounded-2xl p-5 flex flex-col items-center text-center shadow-sm`}
+            className={` ${index%2==0 ? "bg-gradient-to-b from-green-200 to-green-800" : "bg-[#C3D7C4]"} rounded-2xl p-5 flex flex-col items-center text-center shadow-sm transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer`}
           >
             <Image
               src={step.image}

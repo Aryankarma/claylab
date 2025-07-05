@@ -6,11 +6,11 @@ import Heading from '../heading';
 
 export default function StatutoryInfo() {
   return (
-    <Card className="shadow-2xl bg-[#C3D7C435] m-8 rounded-2xl p-6 ">
-      <CardContent className="space-y-4">
+    <Card className="max-w-7xl shadow-2xl bg-[#C3D7C435] m-2 sm:m-4 md:m-8 rounded-2xl p-2 sm:p-4 md:p-6">
+      <CardContent className="space-y-2 sm:space-y-4">
         <Heading text="STATUTORY INFORMATION" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-10 text-sm text-gray-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 sm:gap-y-4 gap-x-4 sm:gap-x-10 text-xs sm:text-sm md:text-base text-gray-800">
           <div className="font-medium">Type of organization</div>
           <div>Section 8 Company (Not For Profit)</div>
 

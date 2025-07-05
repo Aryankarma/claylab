@@ -16,11 +16,11 @@ const MentorsImage = [
 const MeetMentors = () => {
 
   return (
-    <section className="relative py-16 px-4 md:px-16">
+    <section className="relative py-8 sm:py-12 md:py-16 px-2 sm:px-4 md:px-16">
       <Heading text="Meet Our Mentors" />
-      <div className="relative mt-12 flex flex-col lg:flex-row justify-between gap-8 max-w-7xl mx-auto">
+      <div className="relative mt-8 sm:mt-12 flex flex-col lg:flex-row justify-between gap-6 sm:gap-8 max-w-full lg:max-w-7xl mx-auto">
         {/* Sticky Image Grid */}
-        <div className=" w-full lg:w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
+        <div className="w-full lg:w-1/2 grid grid-cols-2 grid-rows-2 gap-2 sm:gap-4">
           {MentorsImage.map((imageData) => (
             <Image
               key={imageData.ImageUrl}
@@ -41,7 +41,7 @@ const MeetMentors = () => {
           </p>
 
           <p>
-            They’re not just teachers. They’re listeners, supporters, and lifelong learners themselves.
+            They're not just teachers. They're listeners, supporters, and lifelong learners themselves.
           </p>
         </div>
       </div>
